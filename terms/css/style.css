@@ -139,6 +139,11 @@ li {
   font-weight: bold;
   margin-bottom: 10px;
 }
+.textTos h3 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 .textTos p {
   margin-bottom: 30px;
 }
