@@ -200,6 +200,9 @@ li {
 .textTos table ul li {
   margin-bottom: 0;
 }
+ol.textTab{
+	padding-left:20px;
+}
 
 /* ==========================================================================
    responsive
