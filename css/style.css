@@ -1,0 +1,1294 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   reset css
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html {
+  overflow-y: scroll;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+ input, textarea, {
+ margin: 0;
+ padding: 0;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th {
+  text-align: left;
+}
+a:focus {
+  outline: none;
+}
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+body {
+  background: #fff;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #666;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+a {
+  color: #666;
+  cursor: pointer;
+}
+a:hover {
+  color: #888;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   utility tool
+   ========================================================================== */
+
+/*
+ * clearfix
+ */
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+ *zoom:1;
+}
+
+/*
+ * text
+ */
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.boxCaption {
+  color: #f6492c;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 2.0;
+}
+.boxText {
+  font-size: 24px;
+  line-height: 2.0;
+  margin-top: 40px;
+}
+
+/* ==========================================================================
+   content styles
+   ========================================================================== */
+
+/*
+ * layout
+ */
+
+.wrapper {
+  width: 100%;
+}
+.wrapperContents {
+  width: 740px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.contents {
+  padding: 30px 0;
+}
+.boxInner {
+  width: 950px;
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+}
+.contentsMain {
+  position: relative;
+  padding: 0px;
+}
+
+/*
+ * header
+ */
+
+.header {
+  background: #f6492c;
+  color: #fff;
+  padding: 12px 30px;
+}
+.header:before, .header:after {
+  content: " ";
+  display: table;
+}
+.header:after {
+  clear: both;
+}
+.header {
+ *zoom:1;
+}
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+.header a:hover {
+  color: #ffcec6;
+}
+.header .logo {
+  float: left;
+}
+.header .logo img {
+  height: 45px;
+}
+.header .menu {
+  float: left;
+  font-size: 13px;
+  margin: 4px 0 0 20px;
+}
+.header .menu li {
+  float: left;
+  margin-right: 20px;
+}
+.header .menu li a {
+  display: inline-block;
+  padding: 8px 5px;
+}
+.header .sns {
+  float: right;
+  margin-top: 7px;
+}
+.header .sns li {
+  float: right;
+  margin-left: 30px;
+}
+
+/*
+ * footer
+ */
+
+.footer {
+  border-top: 1px solid #eee;
+  padding: 20px 30px 0;
+}
+.footer:before, .footer:after {
+  content: " ";
+  display: table;
+}
+.footer:after {
+  clear: both;
+}
+.footer {
+ *zoom:1;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer .menu {
+  float: left;
+  font-size: 13px;
+}
+.footer .menu li {
+  float: left;
+  margin-right: 30px;
+}
+.footer .copyright {
+  font-size: 13px;
+}
+.footer .sns {
+  float: right;
+}
+.footer .sns li {
+  float: right;
+  margin-left: 30px;
+}
+.footer .pagetop {
+  text-align: center;
+}
+.footer .pagetop img {
+  width: 80px;
+}
+
+/*
+ * boxTitle
+ */
+
+#user .boxTitle {
+background: url(../img/bg_user_boxtitle.jpg) center top no-repeat;
+}
+#shop .boxTitle {
+background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
+}
+.boxTitle .contentsMain {
+  min-height: 380px;
+  position: relative;
+}
+#user .boxTitle .contentsMain {
+  padding: 100px 15px 110px;
+}
+#shop .boxTitle .contentsMain {
+  padding: 60px 0 80px;
+}
+.boxTitle .logo img {
+  width: 450px;
+}
+.boxTitle .boxText {
+  color: #fff;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+  -webkit-text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+  -moz-text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+#user .boxTitle .boxText {
+  font-size: 28px;
+  line-height: 2.0;
+  margin: 50px 0 70px;
+}
+#shop .boxTitle .boxText {
+  font-size: 22px;
+  line-height: 2.0;
+  margin: 30px 0;
+}
+.boxTitle .boxText span {
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+.boxTitle .boxTitleImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.btnDownload {
+  position: relative;
+  z-index: 999;
+}
+.btnDownload li{
+  display: inline;
+  margin: 0 6px;
+}
+.btnDownload img {
+  width: 160px;
+}
+#user .boxTitle .iconPoint {
+  position: absolute;
+  top: 150px;
+  right: 280px;
+}
+#shop .boxTitle .iconPoint {
+  margin-bottom: 50px;
+}
+.boxTitle .iconPoint img {
+  height: 100px;
+  width: auto;
+}
+
+/*
+ * boxMap
+ */
+
+.boxMap {
+  background: #f8f7f4;
+  min-height: 516px;
+  position: relative;
+  overflow: hidden;
+}
+.boxMap .contentsMain {
+  position: relative;
+  padding: 60px 0;
+}
+.boxMap .boxHalf {
+  width: 470px;
+  padding-left: 20px;
+  position: relative;
+  z-index: 999;
+}
+.boxMap .boxHalf .icon {
+  width: 400px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.boxMap .boxHalf .icon img {
+  width: 57px;
+}
+.boxMap .boxMapImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*
+ * boxPic
+ */
+
+.boxPic {
+  background: #f0f0ee;
+  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+.boxPic .contentsMain {
+  position: relative;
+  padding: 100px 0 0;
+}
+.boxPic .boxHalf {
+  width: 530px;
+  float: right;
+  position: relative;
+  z-index: 999;
+}
+.boxPic .boxCaption, .boxPic .boxText {
+  -moz-text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+  -webkit-text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+  -ms-text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+}
+.boxPic .boxPicImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*
+ * boxSale
+ */
+
+.boxSale {
+  background: #fff;
+}
+.boxSale .contentsMain {
+  text-align: center;
+  padding: 60px 0;
+}
+.boxSale .listSale {
+  white-space: nowrap;
+ margin: 60px 0 0 0;
+}
+.boxSale .listSale li {
+  display: inline;
+  margin: 0 15px;
+}
+.boxSale .boxSaleBottom {
+  background: #f6492c;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.boxSale .boxTextTel {
+  color: #f6492c;
+}
+.boxSale .boxTextTel span {
+  display: block;
+}
+.boxSale .boxTextTel .time {
+  font-size: 14px;
+}
+.boxSale .boxTextTel a {
+  width: 280px;
+  color: #f6492c;
+  text-decoration: none;
+  display: block;
+  padding: 12px 0;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  border: 2px solid #f6492c;
+  margin: 0 auto 10px;
+}
+
+/*
+ * boxUser
+ */
+
+.boxUser {
+  background: url(../img/bg_boxuser.jpg) repeat;
+  min-height: 645px;
+  position: relative;
+}
+.boxUser .boxBg {
+  height: 600px;
+  background: url(../img/bg_boxuser_inner.png) center top no-repeat;
+}
+.boxUser .contentsMain {
+  position: relative;
+  padding: 60px 20px;
+}
+.boxUser .boxHalf {
+  width: 430px;
+  position: relative;
+  z-index: 999;
+}
+.boxUser .boxHalf .icon {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.boxUser .boxHalf .icon img {
+  width: 57px;
+}
+.boxUser .boxUserImg {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+/*
+ * boxDl
+ */
+
+.boxDl .contentsMain {
+  text-align: center;
+  padding: 60px 15px;
+}
+.boxDl .logo img {
+  width: 450px;
+}
+.boxDl .boxText {
+  color: #f6492c;
+  margin-bottom: 40px;
+}
+.boxDl .boxText span {
+  font-size: 14px;
+  display: block;
+}
+
+/*
+ * boxHelp
+ */
+
+.boxHelp .contentsMain {
+  padding: 60px 15px;
+}
+.boxHelp .boxTextTel {
+  margin-top: 20px;
+}
+.boxHelp .boxTextTel span {
+  display: block;
+}
+.boxHelp .boxTextTel .time {
+  font-size: 14px;
+}
+.boxHelp .boxTextTel a {
+  width: 280px;
+  color: #666;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 12px 15px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  border: 2px solid #ddd;
+  margin: 0 0 10px;
+}
+
+/*
+ * boxInfo
+ */
+
+.boxInfo {
+  width: 980px;
+  margin: 0 auto;
+}
+.boxInfo .contentsMain {
+  padding: 60px 0;
+}
+.boxInfo .boxHelp {
+ float: left;
+}
+.boxInfo .boxHelp .boxInner {
+ width: 475px;
+  padding: 0;
+}
+.boxInfo .boxDl {
+ float: right;
+}
+.boxInfo .boxDl .boxInner {
+ width: 475px;
+  padding: 0;
+}
+
+/*
+ * boxLink
+ */
+
+.boxLink {
+  background: #f6f6f6;
+}
+.boxLink .contentsMain {
+  text-align: center;
+  padding: 40px 15px;
+}
+.boxLink .boxText {
+  font-size: 18px;
+  margin-top: 0
+}
+.boxLink .btn {
+  text-align: center;
+  margin-top: 20px;
+}
+.boxLink .btn a {
+  background: #f6492c;
+  width: 280px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 12px 0;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  margin: 0 auto;
+}
+.boxLink .btn a:hover {
+ background: #f66850;
+}
+
+/*
+ * teams/privacy
+ */
+
+.textTos .heading {
+  color: #f6492b;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.textTos h2 {
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.textTos h3 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.textTos p {
+  margin-bottom: 30px;
+}
+.textTos .textRight {
+  text-align: right;
+}
+.textTos ul, .textTos ol {
+  padding-bottom: 20px;
+}
+.textTos ul, .textTos ol.inner {
+  margin-left: 25px;
+}
+.textTos ul li {
+  list-style: disc;
+  margin: 0 0 10px 20px;
+}
+.textTos ol li {
+  list-style: decimal;
+  margin: 0 0 10px 25px;
+}
+.textTos .listInner li {
+  color: #333;
+  font-weight: bold;
+  list-style: none;
+  margin-left: 0;
+}
+.textTos .listInner span {
+  color: #666;
+  font-weight: normal;
+  display: block;
+}
+.textTos .listInner ul li {
+  float: left;
+  color: #666;
+  font-weight: normal;
+  list-style: circle;
+  margin: 5px 0 0 20px;
+}
+.textTos .listInner ol {
+  margin: -10px 0 10px 25px;
+}
+.textTos .listInner ol li {
+  float: left;
+  color: #666;
+  font-weight: normal;
+  list-style: decimal;
+  margin: 5px 20px 0;
+}
+.textTos table {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+.textTos table th, .textTos table td {
+  width: 50%;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 10px;
+}
+.textTos table th {
+  background: #f6f6f6;
+}
+.textTos table ul {
+  padding-bottom: 0;
+}
+.textTos table ul li {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   responsive
+   ========================================================================== */
+
+@media screen and (max-width:1280px) {
+
+/*
+ * boxMap
+ */
+
+.boxMap .boxMapImg {
+  width: 50%;
+}
+
+/*
+ * boxSale
+ */
+
+.boxSale .boxSaleBottom p {
+ width: 100%;
+}
+.boxSale .boxSaleBottom p img {
+ width: 100%;
+}
+
+}
+
+@media screen and (max-width:768px) {
+
+/*
+ * layout
+ */
+
+.wrapperContents {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.contents {
+  padding: 30px 15px 0;
+}
+.boxInner {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.contentsMain {
+  padding: 0 15px;
+}
+
+/*
+ * header
+ */
+
+.header {
+  padding: 10px;
+}
+.header .sns {
+  display: none;
+}
+
+/*
+ * footer
+ */
+
+.footer {
+  padding: 15px 10px 0;
+}
+.footer .menu {
+  float: none;
+  text-align: center;
+  margin-left: 10px;
+}
+.footer .menu li {
+  float: none;
+  display: inline;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+.footer .sns {
+  float: none;
+  text-align: center;
+  margin: 15px 30px 15px 0;
+}
+.footer .sns li {
+  float: none;
+  display: inline;
+}
+.footer .copyright {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*
+ * boxTitle
+ */
+
+#user .boxTitle .contentsMain {
+  padding: 60px 20px 60px 20px;
+}
+#shop .boxTitle .contentsMain {
+  padding: 50px 20px 70px 20px;
+}
+.boxTitle .logo img {
+  width: 350px;
+}
+#user .boxTitle .boxText {
+  font-size: 24px;
+  margin: 40px 0;
+}
+#shop .boxTitle .boxText {
+  font-size: 20px;
+  margin: 30px 0 40px;
+}
+.boxTitle .boxText span {
+  font-size: 12px;
+}
+.boxTitle .boxTitleImg {
+  position: absolute;
+  right: 20;
+  bottom: 0;
+}
+.boxTitle .boxTitleImg img {
+ width: 100%;
+ max-width: 520px;
+}
+.contentsMain {
+  padding: 50px 20px;
+}
+#user .boxTitle .iconPoint {
+  top: 100px;
+  right: 220px;
+}
+
+/*
+ * boxMap
+ */
+
+.boxMap .contentsMain {
+  position: relative;
+  padding: 60px 20px;
+}
+
+/*
+ * boxPic
+ */
+
+.boxPic .contentsMain {
+  position: relative;
+  padding: 180px 0 0;
+}
+
+/*
+ * boxSale
+ */
+
+.boxSale .contentsMain {
+  padding: 60px 20;
+}
+.boxSale .boxText {
+  font-size: 23px;
+}
+.boxSale .listSale {
+  margin: 40px 0 0 0;
+}
+.boxSale .listSale li {
+  display: inline;
+  margin: 0 10px;
+}
+.boxSale .listSale li img {
+  width: 150px;
+}
+
+/*
+ * boxUser
+ */
+
+.boxUser {
+  min-height: 520px;
+}
+.boxUser .boxBg {
+  height: 520px;
+}
+.boxUser .contentsMain {
+  padding: 60px 20;
+}
+.boxUser .boxUserImg {
+  top: 130px;
+  right: 20px;
+}
+.boxUser .boxUserImg img {
+  width: 380px;
+}
+
+/*
+ * boxDl
+ */
+
+.boxDl .logo img {
+  width: 350px;
+}
+.boxDl .btnDownload {
+  text-align: center !important;
+}
+.boxDl .btnDownload li {
+  display: inline;
+}
+
+/*
+ * boxHelp
+ */
+
+.boxHelp .contentsMain {
+  padding: 30px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.boxHelp .boxTextTel {
+  margin-top: 20px;
+}
+.boxHelp .boxTextTel span {
+  display: block;
+}
+.boxHelp .boxTextTel .time {
+  font-size: 14px;
+}
+.boxHelp .boxTextTel a {
+  margin: 0 auto 10px;
+}
+
+/*
+ * boxInfo
+ */
+
+.boxInfo {
+  width: 100%;
+}
+.boxInfo .contentsMain {
+  padding: 40px 15px;
+}
+.boxInfo .boxHelp {
+ float: none;
+}
+.boxInfo .boxHelp .boxInner {
+ width: 100%;
+}
+.boxInfo .boxDl {
+ float: none;
+}
+.boxInfo .boxDl .boxInner {
+ width: 100%;
+}
+
+@media screen and (max-width:770px) {
+
+/*
+ * text
+ */
+
+.boxCaption {
+  font-size: 20px;
+}
+.boxText {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/*
+ * header
+ */
+
+.header {
+  padding-bottom: 5px;
+}
+.header .logo img {
+  height: 36px;
+}
+.header .logo, .header .menu {
+  float: none;
+  text-align: center;
+}
+.header .menu {
+  margin: 2px 0 0 5px;
+}
+.header .menu li {
+  float: none;
+  display: inline;
+  margin-right: 5px;
+}
+
+/*
+ * boxTitle
+ */
+
+.boxTitle .contentsMain {
+  padding: 50px 20px;
+}
+.boxTitle .logo img {
+  width: 350px;
+}
+#user .boxTitle .boxText {
+  font-size: 24px;
+  margin: 30px 0;
+}
+#shop .boxTitle .boxText {
+  font-size: 20px;
+  margin: 30px 0 40px;
+}
+.boxTitle .boxTitleImg {
+  right: 10px;
+}
+.boxTitle .boxTitleImg img {
+ width: 420px;
+}
+#shop .boxTitle .iconPoint {
+  margin-bottom: 40px;
+}
+#user .boxTitle .iconPoint {
+  top: 40px;
+  right: 30px;
+}
+.boxTitle .iconPoint img {
+  height: 80px;
+  width: auto;
+}
+
+/*
+ * boxMap
+ */
+
+.boxMap {
+  min-height: inherit;
+}
+.boxMap .contentsMain {
+  position: relative;
+  padding: 30px 15px;
+}
+.boxMap .boxHalf {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+.boxMap .boxHalf .icon {
+  display: none;
+}
+.boxMap .boxMapImg {
+  position: inherit;
+  width: 100%;
+}
+.boxMap .boxMapImg img {
+  width: 100%;
+}
+
+/*
+ * boxPic
+ */
+
+.boxPic {
+  min-height: inherit;
+}
+.boxPic .contentsMain {
+  position: relative;
+  padding: 30px 15px;
+}
+.boxPic .boxHalf {
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+.boxPic .boxHalf .icon {
+  display: none;
+}
+.boxPic .boxPicImg {
+  position: inherit;
+  width: 100%;
+}
+.boxPic .boxPicImg img {
+  width: 100%;
+}
+
+/*
+ * boxSale
+ */
+
+.boxSale .contentsMain {
+  padding: 30px 15px 30px 15px;
+}
+.boxSale .boxText {
+  font-size: 16px;
+}
+.boxSale .listSale {
+  white-space: normal;
+}
+.boxSale .listSale li {
+  display: inline;
+  margin: 0 18px;
+}
+.boxSale .listSale li img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+/*
+ * boxUser
+ */
+
+.boxUser .contentsMain {
+  padding: 40px 20;
+}
+
+/*
+ * boxLink
+ */
+
+.boxLink .boxText {
+  font-size: 15px;
+}
+
+/*
+ * boxDl
+ */
+
+.boxDl .boxText span {
+  font-size: 12px;
+}
+
+/*
+ * boxHelp
+ */
+
+.boxHelp .boxTextTel a {
+  padding: 12px 0;
+}
+
+}
+
+@media screen and (max-width:480px) {
+
+/*
+ * boxTitle
+ */
+
+.boxTitle .contentsMain {
+  text-align: center;
+}
+#user .boxTitle .contentsMain {
+  padding: 30px 15px 80px 15px;
+}
+#shop .boxTitle .contentsMain {
+  padding: 30px 15px 100px 15px;
+}
+.boxTitle .logo img {
+  width: 240px;
+  text-align: center;
+}
+#user .boxTitle .boxText {
+  font-size: 22px;
+}
+#shop .boxTitle .boxText {
+  font-size: 18px;
+  margin: 20px 0 30px;
+}
+.boxTitle .boxTitleImg {
+  right: 10px;
+}
+.boxTitle .boxTitleImg img {
+ width: 320px;
+}
+.btnDownload {
+  text-align: left;
+}
+.btnDownload li{
+  display: block;
+  margin: 0 6px 10px;
+}
+#user .boxTitle .iconPoint {
+  top: auto;
+  right: auto;
+  bottom: 30px;
+  left: 30px;
+}
+
+/*
+ * boxSale
+ */
+
+.boxSale .listSale li {
+  display: inline;
+  margin: 0 10px;
+}
+.boxSale .listSale li img {
+  width: 150px;
+}
+
+/*
+ * boxUser
+ */
+
+.boxUser {
+  height: inherit;
+}
+.boxUser .boxBg {
+  height: auto;
+}
+.boxUser .contentsMain {
+  padding: 40px 10;
+}
+.boxUser .boxHalf {
+  width: 100%;
+  text-align: center;
+}
+.boxUser .boxUserImg {
+  width: 100%;
+  position: inherit;
+  top: auto;
+  right: auto;
+  margin-top: 20px;
+}
+.boxUser .boxUserImg img {
+  width: 100%;
+}
+
+/*
+ * boxDl
+ */
+
+.boxDl .contentsMain{
+  padding: 30px 15px;
+}
+
+/*
+ * boxLink
+ */
+
+.boxLink .contentsMain{
+  padding: 30px 15px;
+}
+
+}
+
+@media screen and (max-width:375px) {
+
+/*
+ * header
+ */
+
+.header .menu {
+  font-size: 10px;
+}
+
+/*
+ * text
+ */
+
+.boxCaption {
+  font-size: 16px;
+}
+.boxText {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/*
+ * boxTitle
+ */
+
+.boxTitle .contentsMain {
+  padding: 30px 15px 40px 15px;
+}
+#user .boxTitle .boxText {
+  font-size: 16px;
+  margin: 20px 0;
+}
+#shop .boxTitle .boxText {
+  font-size: 14px;
+  margin: 20px 0;
+}
+.boxTitle .boxText span {
+  font-size: 9px;
+}
+.boxTitle .boxTitleImg {
+  right: 10px;
+}
+.boxTitle .boxTitleImg img {
+ width: 300px;
+}
+
+/*
+ * boxSale
+ */
+
+.boxSale .boxText {
+  font-size: 14px;
+}
+
+.boxSale .listSale {
+  margin: 20px 0 -30px 0;
+}
+
+.boxSale .listSale li {
+  display: inline;
+  margin: 0 10px;
+}
+.boxSale .listSale li img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/*
+ * boxDl
+ */
+
+.boxDl .logo img {
+  width: 280px;
+}
+.boxDl .btnDownload li {
+  display: block;
+}
+.boxDl .boxText span {
+  font-size: 9px;
+}
+
+}
