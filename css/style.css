@@ -252,6 +252,7 @@ li {
 
 #user .boxTitle {
 background: url(../img/bg_user_boxtitle.jpg) center top no-repeat;
+overflow: hidden;
 }
 #shop .boxTitle {
 background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
@@ -367,7 +368,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   padding: 100px 0 0;
 }
 .boxPic .boxHalf {
-  width: 530px;
+  width: auto;
   float: right;
   position: relative;
   z-index: 999;
@@ -396,7 +397,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   padding: 60px 0;
 }
 .boxSale .listSale {
-  white-space: nowrap;
+ white-space: nowrap;
  margin: 60px 0 0 0;
 }
 .boxSale .listSale li {
@@ -439,6 +440,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   background: url(../img/bg_boxuser.jpg) repeat;
   min-height: 645px;
   position: relative;
+  overflow: hidden;
 }
 .boxUser .boxBg {
   height: 600px;
@@ -472,14 +474,20 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 
 .boxDl .contentsMain {
   text-align: center;
+  width: 85%;
   padding: 60px 15px;
+  margin: auto;
 }
 .boxDl .logo img {
-  width: 450px;
+  width: 90%;
 }
 .boxDl .boxText {
   color: #f6492c;
+  width: auto;
+  margin: auto;
+  margin-top: 40px;
   margin-bottom: 40px;
+  font-size: 20px;
 }
 .boxDl .boxText span {
   font-size: 14px;
@@ -522,24 +530,25 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
  */
 
 .boxInfo {
-  width: 980px;
+  width: 950px;
   margin: 0 auto;
 }
 .boxInfo .contentsMain {
-  padding: 60px 0;
+  padding: 60px 40px;
 }
 .boxInfo .boxHelp {
  float: left;
 }
 .boxInfo .boxHelp .boxInner {
- width: 475px;
+ width: 450px;
   padding: 0;
 }
 .boxInfo .boxDl {
  float: right;
 }
 .boxInfo .boxDl .boxInner {
- width: 475px;
+  float: right;
+  width: 450px;
   padding: 0;
 }
 
@@ -677,6 +686,12 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 
 @media screen and (max-width:1280px) {
 
+.boxTitle .boxTitleImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 /*
  * boxMap
  */
@@ -698,7 +713,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:965px) {
 
 /*
  * layout
@@ -790,12 +805,13 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 }
 .boxTitle .boxTitleImg {
   position: absolute;
-  right: 20;
+  width:480px;
+  height: 340px;
+  right: 20px;
   bottom: 0;
 }
 .boxTitle .boxTitleImg img {
  width: 100%;
- max-width: 520px;
 }
 .contentsMain {
   padding: 50px 20px;
@@ -869,8 +885,11 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
  * boxDl
  */
 
+
+
 .boxDl .logo img {
-  width: 350px;
+  margin: auto;
+  width: 320px;
 }
 .boxDl .btnDownload {
   text-align: center !important;
@@ -909,7 +928,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   width: 100%;
 }
 .boxInfo .contentsMain {
-  padding: 40px 15px;
+  margin: auto;
 }
 .boxInfo .boxHelp {
  float: none;
@@ -983,8 +1002,9 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   right: 10px;
 }
 .boxTitle .boxTitleImg img {
- width: 420px;
+ width: 100%;
 }
+
 #shop .boxTitle .iconPoint {
   margin-bottom: 40px;
 }
@@ -1094,8 +1114,16 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
  * boxDl
  */
 
+.boxDl .boxText {
+ margin: auto;
+ width:auto;
+ margin-top: 40px;
+ margin-bottom: 20px;
+ font-size: 16px;
+}
 .boxDl .boxText span {
-  font-size: 12px;
+ font-size: 12px;
+ display: block;
 }
 
 /*
@@ -1108,7 +1136,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:620px) {
 
 /*
  * boxTitle
@@ -1136,16 +1164,19 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 }
 .boxTitle .boxTitleImg {
   right: 10px;
+  bottom: 0px;
+  width: 360px;
+  height: 260px;
 }
 .boxTitle .boxTitleImg img {
- width: 320px;
+ width: 100%;
 }
 .btnDownload {
   text-align: left;
 }
 .btnDownload li{
   display: block;
-  margin: 0 6px 10px;
+  margin: 0 0.5px 10px;
 }
 #user .boxTitle .iconPoint {
   top: auto;
@@ -1184,7 +1215,9 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   text-align: center;
 }
 .boxUser .boxUserImg {
-  width: 100%;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
   position: inherit;
   top: auto;
   right: auto;
@@ -1198,9 +1231,6 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
  * boxDl
  */
 
-.boxDl .contentsMain{
-  padding: 30px 15px;
-}
 
 /*
  * boxLink
@@ -1256,7 +1286,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   right: 10px;
 }
 .boxTitle .boxTitleImg img {
- width: 300px;
+ width: 100%;
 }
 
 /*
