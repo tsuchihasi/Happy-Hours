@@ -49,6 +49,8 @@ a:focus {
    ========================================================================== */
 
 body {
+  max-width: 1500px;
+  margin:auto;
   background: #fff;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -333,7 +335,6 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 }
 .boxMap .boxHalf {
   width: 470px;
-  padding-left: 20px;
   position: relative;
   z-index: 999;
 }
@@ -409,6 +410,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 }
 .boxSale .boxTextTel {
   color: #f6492c;
+  font-weight: bold;
 }
 .boxSale .boxTextTel span {
   display: block;
@@ -493,6 +495,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 }
 .boxHelp .boxTextTel {
   margin-top: 20px;
+  font-weight: bolder;
 }
 .boxHelp .boxTextTel span {
   display: block;
