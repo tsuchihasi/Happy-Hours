@@ -45,6 +45,70 @@ a:focus {
 }
 
 /* ==========================================================================
+   keyframes
+   ========================================================================== */
+
+.fadeInLeft {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInLeft;
+ animation-name: fadeInLeft;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInLeft {
+ 0% { opacity: 0; -webkit-transform: translateX(20px); }
+ 100% { opacity: 1; -webkit-transform: translateX(0); }
+}
+@keyframes fadeInLeft {
+ 0% { opacity: 0; -webkit-transform: translateX(20px); -ms-transform: translateX(20px); transform: translateX(20px); }
+ 100% { opacity: 1; -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
+}
+
+.fadeInUp {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInUp;
+ animation-name: fadeInUp;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInUp {
+ 0% { opacity: 0; -webkit-transform: translateY(20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInUp {
+ 0% { opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+.fadeInRight {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInRight;
+ animation-name: fadeInRight;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInRight {
+ 0% { opacity: 0; -webkit-transform: translateX(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateX(0); }
+}
+@keyframes fadeInRight {
+ 0% { opacity: 0; -webkit-transform: translateX(-20px); -ms-transform: translateX(-20px); transform: translateX(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
+}
+
+/* ==========================================================================
    Base styles
    ========================================================================== */
 
@@ -104,6 +168,8 @@ li {
   padding: 0;
   margin: 0;
 }
+
+
 .boxCaption {
   color: #f6492c;
   font-size: 28px;
@@ -200,6 +266,11 @@ li {
   margin-left: 30px;
 }
 
+.header .sns .call {
+  font-size: 26px;
+  margin-top: -9px;
+  margin-right: 15px;
+}
 /*
  * footer
  */
@@ -253,9 +324,11 @@ li {
 #user .boxTitle {
 background: url(../img/bg_user_boxtitle.jpg) center top no-repeat;
 overflow: hidden;
+display: none;
 }
 #shop .boxTitle {
 background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
+display: none;
 }
 .boxTitle .contentsMain {
   min-height: 380px;
@@ -329,6 +402,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   min-height: 516px;
   position: relative;
   overflow: hidden;
+  visibility: hidden;
 }
 .boxMap .contentsMain {
   position: relative;
@@ -362,6 +436,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   min-height: 420px;
   position: relative;
   overflow: hidden;
+  visibility: hidden;
 }
 .boxPic .contentsMain {
   position: relative;
@@ -391,6 +466,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 
 .boxSale {
   background: #fff;
+  visibility: hidden;
 }
 .boxSale .contentsMain {
   text-align: center;
@@ -409,6 +485,10 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   text-align: center;
   padding-bottom: 40px;
 }
+.boxofboxTextTel{
+  text-align: center;
+}
+
 .boxSale .boxTextTel {
   color: #f6492c;
   font-weight: bold;
@@ -422,6 +502,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 .boxSale .boxTextTel a {
   width: 280px;
   color: #f6492c;
+  margin: 0px;
   text-decoration: none;
   display: block;
   padding: 12px 0;
@@ -429,8 +510,8 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   -moz-border-radius: 60px;
   border-radius: 60px;
   border: 2px solid #f6492c;
-  margin: 0 auto 10px;
 }
+
 
 /*
  * boxUser
@@ -449,6 +530,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 .boxUser .contentsMain {
   position: relative;
   padding: 60px 20px;
+  visibility: hidden;
 }
 .boxUser .boxHalf {
   width: 430px;
@@ -502,6 +584,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   padding: 60px 15px;
 }
 .boxHelp .boxTextTel {
+  background-color: #FFF;
   margin-top: 20px;
   font-weight: bolder;
 }
@@ -512,6 +595,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   font-size: 14px;
 }
 .boxHelp .boxTextTel a {
+  background-color: #FFF;
   width: 280px;
   color: #666;
   text-decoration: none;
@@ -522,7 +606,11 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   -moz-border-radius: 60px;
   border-radius: 60px;
   border: 2px solid #ddd;
-  margin: 0 0 10px;
+  margin: auto;
+}
+
+.boxHelp .boxTextTel a:hover {
+  background-color: #DDDED3;
 }
 
 /*
@@ -808,7 +896,7 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   width:480px;
   height: 340px;
   right: 20px;
-  bottom: 0;
+  bottom: 20px;
 }
 .boxTitle .boxTitleImg img {
  width: 100%;
@@ -1139,6 +1227,15 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 @media screen and (max-width:620px) {
 
 /*
+ * header
+ */
+
+.header .logo {
+  display: none;
+}
+
+
+/*
  * boxTitle
  */
 
@@ -1169,7 +1266,8 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
   height: 260px;
 }
 .boxTitle .boxTitleImg img {
- width: 100%;
+ width: 96.2%;
+ margin-bottom: 20px;
 }
 .btnDownload {
   text-align: left;
@@ -1323,5 +1421,4 @@ background: url(../img/bg_shop_boxtitle.jpg) center top no-repeat;
 .boxDl .boxText span {
   font-size: 9px;
 }
-
 }

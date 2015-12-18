@@ -11,6 +11,20 @@
 <link rel="shortcut icon" href="img/favicon.png">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="javascripts/test.js"></script>
+<script>
+$(function(){
+    $('a[href="#top"]').click(function(){
+        var speed = 500; //移動完了までの時間(sec)を指定
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+});
+</script>
 </head>
 
 <body>
@@ -25,9 +39,10 @@
 <li><a href="http://support.hhapp.jp/" target="_blank">お問合わせ</a></li>
 </ul>
 <ul class="sns">
-<li><a href="#" title="instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+<li><a href="https://www.instagram.com/happy_hours_app/" title="instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
 <li><a href="https://twitter.com/happyhoursteam" title="Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
 <li><a href="https://www.facebook.com/happyhours.apps/" title="Facebook" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+<li class="call"><span data-action="call" data-tel="0120343577"><i class="fa fa-phone"></i> 0120-343-577</span></li>
 </ul>
 <!-- /.header --></div>
 
@@ -43,7 +58,7 @@
 <span>恵比寿エリアを中心にサービス提供中（エリア拡大中）</span></p>
 <p class="iconPoint"><img src="img/icon_shop_boxtitle.png" alt="作成1分・掲載1秒・掲載料無料"></p>
 <ul class="btnDownload">
-<li><a href="#"><img src="img/btn_dl_appstore.png" alt="Download on the App Store"></a></li>
+<li><a href="https://itunes.apple.com/jp/app/happiawa!anatano-jienotaimusabisuapuri/id1016811740?mt=8"><img src="img/btn_dl_appstore.png" alt="Download on the App Store"></a></li>
 <li><a href="https://play.google.com/store/apps/details?id=hhapp.happyhours.android"><img src="img/btn_dl_googleplay.png" alt="ANDROID APP ON Google play"></a></li>
 </ul>
 <p class="boxTitleImg"><img src="img/img_shop_boxtitle.png" alt="あなたのハッピーな時間を作る街のタイムサービスアプリ"></p>
@@ -130,10 +145,12 @@
 <p class="boxText">あなたのお店が成功するよう<br>
 私たちがサポートいたします。<br>
 お気軽にご連絡ください。</p>
+<div class="boxofboxTextTel">
 <p class="boxText boxTextTel">
 <span data-action="call" data-tel="0120343577"><i class="fa fa-phone"></i> 0120-343-577</span>
 <span class="time">[受付時間] 平日 10:00～19:00</span></p>
 <p class="boxText boxTextTel"><a href="mailto:happyhours@coiney.com"><i class="fa fa-envelope-o"></i> メールでお問合わせ</a></p>
+</div>
 <!-- /.contentsMain --></div>
 <!-- /.boxInner --></div>
 
@@ -150,7 +167,7 @@
 近くのお客さまとの出会いを作ります。
 <span>恵比寿エリアを中心にサービス提供中（エリア拡大中）</span></p>
 <ul class="btnDownload">
-<li><a href="#"><img src="img/btn_dl_appstore.png" alt="Download on the App Store"></a></li>
+<li><a href="https://itunes.apple.com/jp/app/happiawa!anatano-jienotaimusabisuapuri/id1016811740?mt=8"><img src="img/btn_dl_appstore.png" alt="Download on the App Store"></a></li>
 <li><a href="https://play.google.com/store/apps/details?id=hhapp.happyhours.android"><img src="img/btn_dl_googleplay.png" alt="ANDROID APP ON Google play"></a></li>
 </ul>
 <!-- /.contentsMain --></div>
@@ -188,7 +205,7 @@
 <li><a href="http://support.hhapp.jp/" target="_blank">お問合わせ</a></li>
 </ul>
 <ul class="sns">
-<li><a href="#" title="instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+<li><a href="https://www.instagram.com/happy_hours_app/" title="instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
 <li><a href="https://twitter.com/happyhoursteam" title="Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
 <li><a href="https://www.facebook.com/happyhours.apps/" title="Facebook" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
 </ul>
