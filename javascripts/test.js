@@ -33,7 +33,7 @@ $(window).scroll(function(){
      topWindow = $(window).scrollTop();
  $('.boxMap').each(function(){
   var targetPosition = $(this).offset().top;
-  if(topWindow > targetPosition - windowHeight + 250){
+  if(topWindow > targetPosition - windowHeight + 300){
    $(this).addClass("fadeInLeft");
   }
  });

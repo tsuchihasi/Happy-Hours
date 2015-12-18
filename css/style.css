@@ -366,6 +366,8 @@ display: none;
 }
 .boxTitle .boxTitleImg {
   position: absolute;
+  overflow: hidden;
+  max-height: 460px;
   right: 0;
   bottom: 0;
 }
@@ -502,7 +504,6 @@ display: none;
 .boxSale .boxTextTel a {
   width: 280px;
   color: #f6492c;
-  margin: 0px;
   text-decoration: none;
   display: block;
   padding: 12px 0;
@@ -622,7 +623,7 @@ display: none;
   margin: 0 auto;
 }
 .boxInfo .contentsMain {
-  padding: 60px 40px;
+  padding: 60px 28px;
 }
 .boxInfo .boxHelp {
  float: left;
@@ -831,9 +832,6 @@ display: none;
 .header {
   padding: 10px;
 }
-.header .sns {
-  display: none;
-}
 
 /*
  * footer
@@ -891,13 +889,13 @@ display: none;
 .boxTitle .boxText span {
   font-size: 12px;
 }
-.boxTitle .boxTitleImg {
+/*.boxTitle .boxTitleImg {
   position: absolute;
   width:480px;
   height: 340px;
   right: 20px;
   bottom: 20px;
-}
+}*/
 .boxTitle .boxTitleImg img {
  width: 100%;
 }
@@ -1031,7 +1029,7 @@ display: none;
  width: 100%;
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:820px) {
 
 /*
  * text
@@ -1067,6 +1065,9 @@ display: none;
   display: inline;
   margin-right: 5px;
 }
+.header .sns {
+  display: none;
+}
 
 /*
  * boxTitle
@@ -1088,6 +1089,8 @@ display: none;
 }
 .boxTitle .boxTitleImg {
   right: 10px;
+  width: 60%;
+  min-width: 40%
 }
 .boxTitle .boxTitleImg img {
  width: 100%;
@@ -1224,7 +1227,7 @@ display: none;
 
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:570px) {
 
 /*
  * header
@@ -1266,8 +1269,7 @@ display: none;
   height: 260px;
 }
 .boxTitle .boxTitleImg img {
- width: 96.2%;
- margin-bottom: 20px;
+ width: 89.4%;
 }
 .btnDownload {
   text-align: left;
