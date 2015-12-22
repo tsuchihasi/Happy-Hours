@@ -495,7 +495,25 @@ display: none;
   position: absolute;
 }
 
-.boxContact p{
+.boxContact .btn a {
+    display: none;
+    background: #f6492c;
+    height: 40px;
+    max-width: 450px;
+    width: 80%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: none;
+    padding: 10px 0;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    margin: auto;
+}
+
+/*.boxContact p{
   display: none;
   background: #f6492c;
   width: 80%;
@@ -511,9 +529,9 @@ display: none;
   -moz-border-radius: 60px;
   border-radius: 60px;
   vertical-align: middle;
-}
+}*/
 
-.boxContact p:hover{
+.boxContact .btn a:hover{
   background-color: #f66850;
 }
 
@@ -1515,7 +1533,7 @@ display: none;
   margin-bottom: 10px;
 }
 
-.boxContact p {
+.boxContact .btn a {
     display: inline-block;
     font-size: 15px;
     width: 40%;
