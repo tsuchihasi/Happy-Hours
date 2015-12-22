@@ -649,18 +649,9 @@ display: none;
 .boxSale .boxTextTel .time {
   font-size: 14px;
 }
-/*.boxSale .boxTextTel a {
-  margin: auto;
-  width: 280px;
-  color: #f6492c;
+.boxSale .boxTextTel a {
   text-decoration: none;
-  display: block;
-  padding: 12px 0;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  border-radius: 60px;
-  border: 2px solid #f6492c;
-}*/
+}
 
 
 /*
