@@ -1712,11 +1712,17 @@ display: none;
   right: -40px;
 }
 .boxTitle .boxTitleImg img {
- width: 75%;
+  width: 75%;
 }
 
 .boxTitle .boxTitleImg1 img {
-    right: 70px;
+  right: 45px;
+  min-width: 80px;
+  width: 90px;
+}
+.boxTitle .boxTitleImg2 img {
+  min-width: 80px;
+  width: 90px;
 }
 
 /*
@@ -1751,7 +1757,7 @@ display: none;
   display: block;
 }
 .boxDl .boxText {
-    font-size: 15px;
+    font-size: 14px;
 }
 .boxDl .boxText span {
   font-size: 9px;
