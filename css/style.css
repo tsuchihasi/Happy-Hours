@@ -644,6 +644,7 @@ display: none;
 }
 .boxSale .boxTextTel span {
   display: block;
+  margin: auto;
 }
 .boxSale .boxTextTel .time {
   font-size: 14px;
