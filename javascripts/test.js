@@ -1,5 +1,13 @@
 $(document).ready(function() {
-		$('.boxTitle').fadeIn(500)
+  var w = $(window).width();
+      x = 530;
+    $('.boxTitle').fadeIn(500)
+    $('.boxContact').fadeIn(800)
+    $('.boxMap').fadeIn(800)
+    if (w <= x) {
+      $('.boxMap .boxHalf').fadeIn(800)
+
+    }
 });
 
 
@@ -27,26 +35,57 @@ $(window).scroll(function(){
  });
 });
 
-$('.boxMap').css('visibility','hidden');
+/*
+ *#Shop .boxMap
+ */
+$('.boxMap .boxHalf').css('visibility','hidden');
 $(window).scroll(function(){
  var windowHeight = $(window).height(),
      topWindow = $(window).scrollTop();
- $('.boxMap').each(function(){
+     w = $(window).width();
+     x = 530;
+ $('.boxMap .boxHalf').each(function(){
   var targetPosition = $(this).offset().top;
-  if(topWindow > targetPosition - windowHeight + 300){
-   $(this).addClass("fadeInLeft");
+    if(topWindow > targetPosition - windowHeight + 200){
+      $(this).addClass("fadeInLeft");
   }
  });
 });
 
-$('.boxPic').css('visibility','hidden');
+
+/*
+ *#Shop .boxPic
+ */
+$(window).scroll(function(){
+  var windowHeight = $(window).height(),
+      topWindow = $(window).scrollTop();
+  $('.boxPic').each(function(){
+   var targetPosition = $(this).offset().top;
+   if(topWindow > targetPosition - windowHeight){
+    $('.boxPic').fadeIn(500)
+   }
+  });
+ });
+$('.boxPic .boxHalf').css('visibility','hidden');
 $(window).scroll(function(){
  var windowHeight = $(window).height(),
      topWindow = $(window).scrollTop();
- $('.boxPic').each(function(){
+ $('.boxPic .boxHalf').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInRight");
+  }
+ });
+});
+
+
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('.boxSale .contentsMain').each(function(){
   var targetPosition = $(this).offset().top;
   if(topWindow > targetPosition - windowHeight + 250){
-   $(this).addClass("fadeInRight");
+   $(this).addClass("fadeInUp");
   }
  });
 });
