@@ -736,18 +736,7 @@ display: none;
   font-size: 14px;
 }
 .boxHelp .boxTextTel a {
-  background-color: #FFF;
-  width: 280px;
-  color: #666;
   text-decoration: none;
-  text-align: center;
-  display: block;
-  padding: 12px 15px;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  border-radius: 60px;
-  border: 2px solid #ddd;
-  margin: auto;
 }
 
 .boxHelp .boxTextTel a:hover {
