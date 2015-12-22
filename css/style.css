@@ -649,7 +649,7 @@ display: none;
 .boxSale .boxTextTel .time {
   font-size: 14px;
 }
-.boxSale .boxTextTel a {
+/*.boxSale .boxTextTel a {
   margin: auto;
   width: 280px;
   color: #f6492c;
@@ -660,7 +660,7 @@ display: none;
   -moz-border-radius: 60px;
   border-radius: 60px;
   border: 2px solid #f6492c;
-}
+}*/
 
 
 /*
