@@ -500,10 +500,10 @@ display: none;
   background: #f6492c;
   width: 80%;
   max-width: 450px;
-  height: 50px;
+  height: 40px;
   color: #fff;
   margin: auto;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   padding: 10px 0;
@@ -1533,11 +1533,12 @@ display: none;
   margin-bottom: 10px;
 }
 
-.boxContact p{
-  display: inline-block;
-  font-size: 20px;
-  width: 60%;
-  height: 40px;
+.boxContact p {
+    display: inline-block;
+    font-size: 15px;
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 /*
