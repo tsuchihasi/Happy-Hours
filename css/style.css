@@ -650,6 +650,7 @@ display: none;
   font-size: 14px;
 }
 .boxSale .boxTextTel a {
+  margin: auto;
   width: 280px;
   color: #f6492c;
   text-decoration: none;
