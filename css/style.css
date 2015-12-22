@@ -1383,7 +1383,7 @@ display: none;
  */
 
 .boxLink .boxText {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /*
@@ -1661,7 +1661,7 @@ display: none;
 
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:400px) {
 
 /*
  * header
@@ -1701,11 +1701,22 @@ display: none;
 .boxTitle .boxText span {
   font-size: 9px;
 }
+
+.boxTitle .iconPoint img {
+    margin-top: 0px;
+    height: 60px;
+    width: auto;
+}
+
 .boxTitle .boxTitleImg {
-  right: 10px;
+  right: -40px;
 }
 .boxTitle .boxTitleImg img {
- width: 100%;
+ width: 75%;
+}
+
+.boxTitle .boxTitleImg1 img {
+    right: 70px;
 }
 
 /*
@@ -1739,7 +1750,15 @@ display: none;
 .boxDl .btnDownload li {
   display: block;
 }
+.boxDl .boxText {
+    font-size: 15px;
+}
 .boxDl .boxText span {
   font-size: 9px;
+}
+
+
+.boxHelp .boxTextTel .time {
+    font-size: 9px;
 }
 }
