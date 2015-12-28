@@ -664,6 +664,7 @@ display: none;
 .boxSale .boxTextTel span {
   display: block;
   font-size: 22px;
+  color: #666;
   margin: 0;
 }
 .boxSale .boxTextTel .time {
@@ -780,14 +781,14 @@ display: none;
   padding: 60px 28px;
 }
 .boxInfo .boxHelp {
- float: left;
+ float: right;
 }
 .boxInfo .boxHelp .boxInner {
  width: 450px;
   padding: 0;
 }
 .boxInfo .boxDl {
- float: right;
+ float: left;
 }
 .boxInfo .boxDl .boxInner {
   float: right;
@@ -1068,7 +1069,6 @@ display: none;
   width: 150px;
 }
 .boxSale .boxTextTel span {
-    color: #f6492c;
     font-size: 16px;
 }
 .boxSale .boxTextTel .time {
@@ -1119,7 +1119,6 @@ display: none;
 .boxHelp .contentsMain {
   padding: 30px 15px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
 }
 .boxHelp .boxTextTel {
   margin-top: 10px;
@@ -1156,7 +1155,9 @@ display: none;
  float: none;
 }
 .boxInfo .boxDl .boxInner {
- width: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
 }
 
 @media screen and (max-width:980px) {
@@ -1747,7 +1748,7 @@ display: none;
 }
 
 .boxTitle .boxTitleImg1 img {
-  right: 65px;
+  right: 55px;
   min-width: 80px;
   width: 110px;
 }
@@ -1792,6 +1793,10 @@ display: none;
 /*
  * boxDl
  */
+
+ .boxDl .contentsMain {
+   padding: 30px 15px;
+ }
 
 .boxDl .logo img {
   width: 280px;
