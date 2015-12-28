@@ -177,7 +177,7 @@ li {
   line-height: 2.0;
 }
 .boxText {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 2.0;
   margin-top: 40px;
 }
@@ -269,7 +269,7 @@ li {
   text-decoration: none;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
-  border-radius: 15px;
+  border-radius: 5px;
   vertical-align: middle;
   text-align: center;
 }
@@ -455,33 +455,33 @@ display: none;
   padding-right: 20px;
 }
 
-.boxContact .contactText{
-  display: table-cell;
-  margin: auto;
-  font-size: 12px;
-  width: 20%;
-  vertical-align: middle;
-  position: relative;
+.boxContact .contactText {
+    display: table-cell;
+    margin: auto;
+    font-size: 12px;
+    width: 30%;
+    vertical-align: middle;
+    position: relative;
 }
 
 .boxContact .menu {
-  display: table-cell;
-  margin: auto;
-  margin-left: -100px;
-  margin-bottom: 20px;
-  width: 64%;
-  padding-left: 20px;
-  vertical-align: middle;
+    display: table-cell;
+    margin: auto;
+    margin-left: -100px;
+    margin-bottom: 20px;
+    width: 64%;
+    padding-left: 0px;
+    vertical-align: middle;
 }
 
 .boxContact .menu li {
-  width: auto;
-  margin: auto;
-  float: left;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 16px;
-  margin-left: 100px;
+    width: auto;
+    margin: auto;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 22px;
 }
 
 .open{
@@ -497,7 +497,7 @@ display: none;
 
 .boxContact .btn a {
     display: none;
-    background: #f6492c;
+    background: #b6b9c1;
     height: 40px;
     max-width: 450px;
     width: 80%;
@@ -509,7 +509,7 @@ display: none;
     padding: 10px 0;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
-    border-radius: 60px;
+    border-radius: 5px;
     margin: auto;
 }
 
@@ -532,13 +532,14 @@ display: none;
 }*/
 
 .boxContact .btn a:hover{
-  background-color: #f66850;
+  background-color: #9c9ea6;
 }
 
 .boxContact .menu li a {
-  display: inline-block;
-  padding: none;
-  text-decoration: none;
+    display: inline-block;
+    padding: none;
+    vertical-align: middle;
+    text-decoration: none;
 }
 
 
@@ -662,6 +663,7 @@ display: none;
 }
 .boxSale .boxTextTel span {
   display: block;
+  font-size: 22px;
   margin: 0;
 }
 .boxSale .boxTextTel .time {
@@ -678,7 +680,7 @@ display: none;
 
 .boxUser {
   background: url(../img/bg_boxuser.jpg) repeat;
-  min-height: 645px;
+  min-height: 500px;
   position: relative;
   overflow: hidden;
 }
@@ -688,10 +690,11 @@ display: none;
 }
 .boxUser .contentsMain {
   position: relative;
-  padding: 60px 20px;
+  padding: 60px 0px;
   visibility: hidden;
 }
 .boxUser .boxHalf {
+  margin-left: 40px;
   width: 430px;
   position: relative;
   z-index: 999;
@@ -706,9 +709,11 @@ display: none;
 .boxUser .boxUserImg {
   position: absolute;
   top: 50px;
-  right: 0;
+  right: -50px;
 }
-
+.boxUser .boxUserImg img{
+  width: 100%;
+}
 /*
  * boxDl
  */
@@ -744,22 +749,24 @@ display: none;
 }
 .boxHelp .boxTextTel {
   background-color: #FFF;
+  font-size: 22px;
   margin-top: 20px;
   font-weight: bolder;
 }
 .boxHelp .boxTextTel span {
   display: block;
+  font-size: 22px;
 }
 .boxHelp .boxTextTel .time {
-  font-size: 14px;
+  font-size: 22px;
 }
 .boxHelp .boxTextTel a {
   text-decoration: none;
 }
 
-.boxHelp .boxTextTel a:hover {
+/*.boxHelp .boxTextTel a:hover {
   background-color: #DDDED3;
-}
+}*/
 
 /*
  * boxInfo
@@ -809,7 +816,7 @@ display: none;
 }
 .boxLink .btn a {
   background: #f6492c;
-  width: 280px;
+  width: 90%;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -818,7 +825,7 @@ display: none;
   padding: 12px 0;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
-  border-radius: 60px;
+  border-radius: 5px;
   margin: 0 auto;
 }
 .boxLink .btn a:hover {
@@ -1049,9 +1056,7 @@ display: none;
 .boxSale .contentsMain {
   padding: 60px 20;
 }
-.boxSale .boxText {
-  font-size: 23px;
-}
+
 .boxSale .listSale {
   margin: 40px 0 0 0;
 }
@@ -1062,7 +1067,12 @@ display: none;
 .boxSale .listSale li img {
   width: 150px;
 }
-
+.boxSale .boxTextTel span {
+    font-size: 16px;
+}
+.boxSale .boxTextTel .time {
+    font-size: 12px;
+}
 /*
  * boxUser
  */
@@ -1078,7 +1088,7 @@ display: none;
 }
 .boxUser .boxUserImg {
   top: 130px;
-  right: 20px;
+  right: 40px;
 }
 .boxUser .boxUserImg img {
   width: 380px;
@@ -1111,13 +1121,15 @@ display: none;
   border-bottom: 1px solid #ddd;
 }
 .boxHelp .boxTextTel {
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 .boxHelp .boxTextTel span {
   display: block;
+  font-size: 16px;
 }
 .boxHelp .boxTextTel .time {
-  font-size: 14px;
+  font-size: 12px;
 }
 .boxHelp .boxTextTel a {
   margin: 0 auto 10px;
@@ -1209,6 +1221,12 @@ display: none;
   margin: 30px 0 40px;
 }
 
+.boxTitle .boxText span {
+    font-size: 11px;
+    display: block;
+    margin-top: 0px;
+}
+
 .boxTitle .iconPoint img {
   margin-top: -30px;
   height: 60px;
@@ -1224,10 +1242,10 @@ display: none;
 }
 
 .boxTitle .boxTitleImg {
-  right: 10px;
-  width: 60%;
-  min-width: 40%;
-  bottom: 0;
+    right: 10px;
+    width: 70%;
+    min-width: 40%;
+    bottom: 0;
 }
 
 .boxTitle .boxTitleImg img {
@@ -1367,6 +1385,7 @@ display: none;
  .boxUser .boxHalf {
    width: 100%;
    text-align: center;
+   margin-left: 0px;
  }
  .boxUser .boxUserImg {
    width: 80%;
@@ -1406,9 +1425,9 @@ display: none;
  * boxHelp
  */
 
-.boxHelp .boxTextTel a {
+/*.boxHelp .boxTextTel a {
   padding: 12px 0;
-}
+}*/
 
 }
 
@@ -1461,14 +1480,19 @@ display: none;
   font-size: 22px;
 }
 #shop .boxTitle .boxText {
-  font-size: 18px;
+  font-size: 16px;
   margin: 20px 0 30px;
 }
+.boxTitle .iconPoint img {
+    margin-top: -20px;
+    height: 50px;
+    width: auto;
+}
 .boxTitle .boxTitleImg {
-  right: 7px;
-  bottom: -30px;
-  width: 360px;
-  height: 260px;
+    right: 7px;
+    bottom: 5px;
+    width: 400px;
+    height: 260px;
 }
 .boxTitle .boxTitleImg img {
  width: 89.4%;
@@ -1513,8 +1537,9 @@ display: none;
 }
 
 .boxContact .contactText {
-  display: block;
-  width: auto;
+    display: block;
+    width: auto;
+    margin-top: 10px;
 }
 
 .boxContact .menu {
@@ -1536,7 +1561,7 @@ display: none;
 .boxContact .btn a {
     display: inline-block;
     font-size: 15px;
-    width: 40%;
+    width: 90%;
     height: auto;
     margin-bottom: 10px;
 }
@@ -1656,8 +1681,8 @@ display: none;
  * boxLink
  */
 
-.boxLink .contentsMain{
-  padding: 30px 15px;
+.boxLink .contentsMain {
+   padding: 30px 0px;
 }
 
 }
@@ -1680,7 +1705,7 @@ display: none;
   font-size: 16px;
 }
 .boxText {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 20px;
 }
 
@@ -1688,7 +1713,8 @@ display: none;
  * boxTitle
  */
 
-.boxTitle .contentsMain {
+#user .boxTitle .contentsMain {
+  min-height: 380px;
   padding: 30px 15px 40px 15px;
 }
 #user .boxTitle .boxText {
@@ -1704,26 +1730,39 @@ display: none;
 }
 
 .boxTitle .iconPoint img {
-    margin-top: 0px;
-    height: 60px;
+    margin-top: -10px;
+    height: 50px;
     width: auto;
 }
-
+.boxTitle .btnDownload img {
+    width: 130px;
+}
 .boxTitle .boxTitleImg {
-  right: -40px;
+    right: -30px;
+    bottom: 0px;
 }
 .boxTitle .boxTitleImg img {
-  width: 75%;
+  width: 80%;
 }
 
 .boxTitle .boxTitleImg1 img {
-  right: 45px;
+  right: 80px;
   min-width: 80px;
-  width: 90px;
+  width: 110px;
 }
 .boxTitle .boxTitleImg2 img {
   min-width: 80px;
-  width: 90px;
+  width: 110px;
+}
+
+/*
+ * boxUser
+ */
+
+.boxUser .contentsMain {
+    position: relative;
+    padding: 30px 0px;
+    visibility: hidden;
 }
 
 /*
@@ -1756,6 +1795,9 @@ display: none;
 }
 .boxDl .btnDownload li {
   display: block;
+}
+.boxDl .btnDownload img {
+    width: 130px;
 }
 .boxDl .boxText {
     font-size: 14px;
